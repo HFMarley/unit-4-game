@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Crystal Collector Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+<body>
+
+    <div class="container">
+
+
+        <div class="jumbotron">
+            <h1 class="text-center">
+                <strong>The Crystal Collector Game</strong>
+            </h1>
+        </div>
+
+
+        <div class="row">
+            
+            <div class="col-md-6">
+                <div id="Instructions" class="card">
+                    <h3 class="card-header">Game Instructions</h3>
+                    <div class="card-body"><p>You will be given a random number at the start of the game.</p><p>There are four crystals. By clicking on a crystal you will add a specific amount of points to your total score.</p><p>You win the game by matching your total score to random number. You lose the game if your total score goes above the random number.</p><p>The value of each crystal is hidden from you until you click on it.</p><p>Each time when the game resets, the game will change the values of each crystal.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-6">
+
+                <div class="card">
+                    <h3 class="card-header">Get to this Number</h3>
+                    <div class="card-body">
+                        <h3 id="computer-Number"></h3>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-header">Your Wins & Losses</h3>
+                    <div class="card-body">
+                        <h3 id="Wins">Wins: </h3>
+                        <h3 id="Losses">Losses: </h3>
+                    </div>
+                </div>
+
+                <div class="images">
+                    <img src="assets/images/aqua-gem.png" alt="aqua gem" class="gem-button" id="aqua-gem" height=100px width=100px>
+                    <img src="assets/images/green-gem.png" alt="green gem" class="gem-button" id="green-gem" height=100px width=100px>
+                    <img src="assets/images/red-gem.png" alt="red gem" class="gem-button" id="red-gem" height=100px width=100px>
+                    <img src="assets/images/blue-gem.png" alt="blue gem" class="gem-button" id="blue-gem" height=100px width=100px>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-header">Your Current Score:</h3>
+                    <div class="card-body">
+                        <h3 id="current-score"></h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <script src="game.js"></script> 
+</body>
+</html>
